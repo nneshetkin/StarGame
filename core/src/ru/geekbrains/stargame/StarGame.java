@@ -12,7 +12,7 @@ public class StarGame extends ApplicationAdapter {
 	@Override
 	public void create () {
 		batch = new SpriteBatch();
-		img = new Texture("badlogic.jpg");
+		img = new Texture("barabas.jpg");
 	}
 
 	@Override
@@ -20,6 +20,7 @@ public class StarGame extends ApplicationAdapter {
 		ScreenUtils.clear(1, 0, 0, 1);
 		batch.begin();
 		batch.draw(img, 0, 0);
+		//batch.draw(img,0,0,100,200);
 		batch.end();
 	}
 	
