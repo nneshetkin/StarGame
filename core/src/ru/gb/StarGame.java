@@ -12,15 +12,15 @@ public class StarGame extends ApplicationAdapter {
 	@Override
 	public void create () {
 		batch = new SpriteBatch();
-		img = new Texture("barabas.jpg");
+		img = new Texture("barabas512.jpg");
 	}
 
 	@Override
 	public void render () {
 		ScreenUtils.clear(1, 0, 0, 1);
 		batch.begin();
-		batch.draw(img, 0, 0);
-		//batch.draw(img,0,0,100,200);
+		//batch.draw(img, 0, 0);
+		batch.draw(img,0,0,640,480);
 		batch.end();
 	}
 	
